@@ -1,0 +1,30 @@
+body {
+    background-color: white;
+    color: rgb(255, 255, 161);
+  
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+    color: rgb(76, 76, 255);
+    border-bottom: 1px solid rgb(200, 200, 200);
+    text-align: center  ;
+}
+#likebtn{
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn {
+    background-color: white;
+    cursor: pointer;;
+    color: red;
+    outline: none;
+    border: none;
+
+}
+#count {
+    color: black;
+}
