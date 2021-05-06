@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+* {
+     
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.navbar-container {
+    background-color: rgb(50, 50, 50);
+    font-family: Girassol , cursive;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+}
+
+
+.title {
+    color: #FF4081;
+    font-family: 'Helvetica Neue';
+    text-shadow: #CFD8DC;
+    cursor: pointer;
+}
+
+.title:hover {
+    color: white;
+}
+
+.links{
+    display: flex;
+    margin-right: auto;
+
+}
+
+li {
+    list-style: none;
+    width: 100%;
+    
+}
+
+li a {
+    text-decoration: none;
+    color: #CFD8DC;
+    text-transform: uppercase;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+li a:hover {
+    color: #FF4081;
+    transition: 100ms ease-in;
+}
+
+.hamburger {
+    display: none;
+}
+@media screen and (max-width:600px) {
+    .hamburger a {    
+        text-decoration: none;
+        color: #FF4081;
+        font-size: 1.5rem;
+        z-index: 2;
+    }    
+
+    .hamburger {
+        display: flex;        
+        position: absolute;
+        right: 5%;
+        align-items: center;
+    }
+
+    .hamburger a:hover {
+        color: white;
+    }
+
+    .navbar-container {
+        position: grid;
+        height: 10vh;
+    }
+
+    .title {
+        position: fixed;
+    }
+
+    .links-container {        
+        display: none;
+    }
+
+    .links-container.shows {
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        transition: all 1s ease-out;    
+        
+        
+    }
+    .links {
+        position: fixed;
+        background-color: rgb(50, 50, 50);
+        height: 100vh;
+        width: 100%;
+        left: 50%;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .fa-times {
+        cursor: pointer;
+        color: white;
+        font-size: 1.5rem;
+        padding-left: 1em;
+    }
+    .fa-times:hover{
+        color: #FF4081;
+    }
+
+}
+
+
+
+
+
+
+
